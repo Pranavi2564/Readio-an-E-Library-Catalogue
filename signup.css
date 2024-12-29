@@ -1,0 +1,124 @@
+/* Overall container for the sign-up form */
+.signup-page {
+    max-width: 500px; /* Increased width for a more spacious layout */
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title styling */
+.signup-page h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grouping form fields */
+.form-group {
+    text-align: left;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Input fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Added for better width management */
+    color: #333;
+}
+
+/* Button styling */
+.form-group button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0066cc; /* OpenLibrary primary color */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+}
+
+/* Additional links (Sign in, Forgot password) */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0066cc;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the footer and privacy text */
+.footer-text {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Styling the 'By signing up' section */
+.by-signing-up {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.by-signing-up a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.by-signing-up a:hover {
+    text-decoration: underline;
+}

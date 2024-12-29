@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Readio</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <main>
+        <section class="signup-page">
+            <h1>Create an Account</h1>
+            <form class="signup-form" action="signup_process.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+                </div>
+                <button type="submit" class="signup-submit-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html" class="login-link">Log In</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Readio.</h4>
+                <ul>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Partner With Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Discover</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Authors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Develop</h4>
+                <ul>
+                    <li><a href="#">Developer Center</a></li>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">Bulk Data Dumps</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Report A Problem</a></li>
+                    <li><a href="#">Suggesting Edits</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openLoginPage() {
+            // Redirect to the login page
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

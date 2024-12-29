@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <!-- Example user -->
+    <user>
+        <username>exampleUser</username>
+        <email>example@example.com</email>
+        <password>123456</password>
+    </user>
+    <user>
+        <username>demo</username>
+        <email>demo@gmail.com</email>
+        <password>demo</password>
+    </user>
+</users>

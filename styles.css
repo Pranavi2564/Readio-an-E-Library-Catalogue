@@ -1,0 +1,431 @@
+/* Global Styles */
+:root {
+    --primary-color: #0076be;
+    --secondary-color: #598b9d;
+    --background-color: #e7e4d6;
+    --text-color: #333;
+    --header-bg: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.top-header {
+    width: 100%;
+}
+
+.archive-header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.archive-logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.donate-button {
+    background-color: #c42;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.language-select {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* Navigation Styles */
+.main-nav {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.search-select {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-button {
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Auth Buttons Styles */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.signup-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.feature-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Book Carousel Styles */
+.trending-section, .classics-section {
+    padding: 40px 20px;
+}
+
+.trending-section h2, .classics-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.kids-section, .thrillers-section, .textbooks-section {
+    padding: 40px 20px;
+}
+
+.kids-section h2, .thrillers-section h2, .textbooks-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.book-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+
+.book-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+.books-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.books-container::-webkit-scrollbar {
+    display: none;
+}
+
+.book-card {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.book-card h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.borrow-btn, .read-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .nav-links, .search-container, .auth-buttons {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.show, .search-container.show, .auth-buttons.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        margin: 10px 0;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card {
+        width: 150px;
+    }
+
+    .book-card img {
+        width: 120px;
+        height: 160px;
+    }
+}
